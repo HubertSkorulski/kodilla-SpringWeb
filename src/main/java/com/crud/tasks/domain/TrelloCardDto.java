@@ -15,7 +15,5 @@ public class TrelloCardDto {
 
 
 
-    //private Badges badges;
-
 
 }

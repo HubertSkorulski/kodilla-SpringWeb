@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/v1/trello")
 @RequiredArgsConstructor
@@ -17,9 +18,7 @@ public class TrelloController {
 
     @GetMapping("getTrelloBoards")
     public List<TrelloBoardDto> getTrelloBoards() {
-
         return trelloClient.getTrelloBoards();
-
     }
 
     @PostMapping("createTrelloCard")
