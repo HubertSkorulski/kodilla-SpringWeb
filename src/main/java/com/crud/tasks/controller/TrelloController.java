@@ -18,6 +18,7 @@ public class TrelloController {
 
     @GetMapping("getTrelloBoards")
     public List<TrelloBoardDto> getTrelloBoards() {
+
         return trelloClient.getTrelloBoards();
     }
 
