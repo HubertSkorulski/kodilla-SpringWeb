@@ -14,6 +14,6 @@ public class AdminConfig {
     @Value("${admin.name}")
     private String adminName;
 
-    @Value("${company.name}")
+    @Value("${company.details}")
     private String companyName;
 }
